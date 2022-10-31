@@ -94,4 +94,10 @@ function generatePassword() {
   else if (confirmChar) {
     userChoice = characters;
   }
+  var generatedPassword = "";
+  for (var i = 0; i < enter; i++) {
+    generatedPassword += userChoice[Math.floor(Math.random() * userChoice.length)];
+    console.log(generatedPassword);
+  }
+  return generatedPassword;
 }
